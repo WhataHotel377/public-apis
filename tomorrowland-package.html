@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your complete Tomorrowland Belgium experience - Hotel + Shuttle Package from LiveHowYouWant.com">
+    <title>Tomorrowland Belgium 2024 - Hotel + Shuttle Package | LiveHowYouWant.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path fill="%23ffffff" fill-opacity="0.1" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"/><path fill="%23ffffff" fill-opacity="0.1" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"/></svg>') repeat-x;
+            background-size: 1200px 120px;
+            animation: wave 20s linear infinite;
+        }
+
+        @keyframes wave {
+            0% { background-position: 0 0; }
+            100% { background-position: 1200px 0; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #667eea;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .package-card h3 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .package-card ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .package-card li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .package-card li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .package-card li:last-child {
+            border-bottom: none;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .features {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .price-tag {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .package-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .festival-dates {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="logo">LIVEHOWYOUWANT.COM</div>
+            <h1>Tomorrowland Belgium 2024</h1>
+            <div class="festival-dates">
+                <strong>🎉 July 19-21 & July 26-28, 2024</strong>
+            </div>
+            <p>Complete Hotel + Shuttle Package</p>
+            <p>Experience the World's Greatest Music Festival Worry-Free</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 2.5rem; color: #333;">All-Inclusive Package</h2>
+            <p style="font-size: 1.2rem; color: #666; max-width: 800px; margin: 20px auto;">
+                Everything you need for the ultimate Tomorrowland experience in one convenient package.
+                No stress, just pure festival magic.
+            </p>
+            <div class="price-tag">Starting from €599 per person</div>
+        </div>
+
+        <div class="package-grid">
+            <div class="package-card">
+                <h3>🏨 Accommodation</h3>
+                <ul>
+                    <li>3-star or 4-star hotel options</li>
+                    <li>Convenient location near Brussels</li>
+                    <li>Double or twin room configuration</li>
+                    <li>Daily breakfast included</li>
+                    <li>Free Wi-Fi throughout</li>
+                    <li>Check-in Friday, Check-out Monday</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <h3>🚌 Shuttle Service</h3>
+                <ul>
+                    <li>Round-trip transportation daily</li>
+                    <li>Direct route to festival grounds</li>
+                    <li>Comfortable, air-conditioned coaches</li>
+                    <li>Flexible departure times</li>
+                    <li>Professional, friendly drivers</li>
+                    <li>Guaranteed seat reservation</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <h3>🎫 Festival Access</h3>
+                <ul>
+                    <li>3-day Full Madness Pass included</li>
+                    <li>Access to all festival stages</li>
+                    <li>Weekend 1 or Weekend 2 options</li>
+                    <li>Fast-track entry lane access</li>
+                    <li>Official Tomorrowland bracelet</li>
+                    <li>Festival info pack included</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2>Why Book With <span class="highlight">LiveHowYouWant?</span></h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-icon">💎</div>
+                <h3>Premium Experience</h3>
+                <p>Carefully selected hotels and reliable shuttle service for maximum comfort and convenience.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h3>Secure Booking</h3>
+                <p>100% secure payment processing with instant confirmation and full booking protection.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🌟</div>
+                <h3>24/7 Support</h3>
+                <p>Dedicated customer service team available around the clock during your festival weekend.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <h3>Best Value</h3>
+                <p>Competitive pricing with no hidden fees. What you see is what you pay.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <div class="container">
+            <h2>Ready for the Experience of a Lifetime?</h2>
+            <p style="font-size: 1.3rem; margin: 20px 0;">Limited packages available. Book now to secure your spot at Tomorrowland Belgium!</p>
+            <a href="#book-now" class="btn">Book Your Package Now</a>
+            <p style="margin-top: 30px; font-size: 1rem; opacity: 0.9;">
+                📧 Questions? Contact us at <strong>info@livehowyouwant.com</strong><br>
+                📞 Call us: +32 2 XXX XXXX
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <a href="https://livehowyouwant.com">LiveHowYouWant.com</a> - All Rights Reserved</p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+            Tomorrowland is a registered trademark of ID&T Belgium. This package is offered by LiveHowYouWant.com as an independent travel service provider.
+        </p>
+    </footer>
+</body>
+</html>
