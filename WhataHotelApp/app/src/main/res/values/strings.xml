@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WhataHotel! Rates</string>
+    <string name="loading">Loading rates…</string>
+    <string name="no_rates_available">No rates available</string>
+    <string name="refresh_rates">Refresh rates</string>
+    <string name="rate_per_night">Rate per night</string>
+</resources>
